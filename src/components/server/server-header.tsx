@@ -74,7 +74,7 @@ export const ServerHeader = ({
         )}
         {isModerator && (
           <DropdownMenuItem
-            onClick={() => { }}
+            onClick={() => onOpen("createChannel")}
             className="px-3 py-2 text-sm cursor-pointer"
           >
             Create Channel
