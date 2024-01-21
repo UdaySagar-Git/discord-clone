@@ -4,7 +4,7 @@ import '@/styles/globals.css'
 import { ClerkProvider } from '@clerk/nextjs'
 import { ThemeProvider } from "@/providers/theme-provider"
 import { cn } from '@/lib/utils'
-import { ModalProvider } from '@/providers/model-provider'
+import { ModalProvider } from '@/providers/modal-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
