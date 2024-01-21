@@ -1,6 +1,6 @@
 "use client";
 
-import { CreateServerModal } from "@/modals/create-server-model";
+import { CreateServerModal } from "@/modals/create-server-modal";
 import { useEffect, useState } from "react";
 
 
