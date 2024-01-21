@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '@/styles/globals.css'
 import { ClerkProvider } from '@clerk/nextjs'
-import { ThemeProvider } from "@/components/providers/theme-provider"
+import { ThemeProvider } from "@/providers/theme-provider"
 import { cn } from '@/lib/utils'
+import { ModalProvider } from '@/providers/model-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ export default function RootLayout({
             enableSystem={false}
             storageKey='discord-theme'
           >
+            <ModalProvider/>
             {children}
           </ThemeProvider>
         </body>

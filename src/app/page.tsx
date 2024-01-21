@@ -1,7 +1,7 @@
 import { initialProfile } from "@/lib/initial-profile";
 import { db } from "@/lib/db";
 import { redirect } from "next/navigation";
-import { InitialModal } from "@/components/modals/initial-modal";
+import { InitialModal } from "@/modals/initial-modal";
 
 export default async function Home() {
   const profile = await initialProfile();
